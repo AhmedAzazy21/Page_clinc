@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.html">
+    <title>Create Account</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+    background-color: #093f1e;
+    color: #fff;
+    padding: 10px 0;
+    margin: 50px;
+}
+        .container {
+    width: 80%;
+    margin: 0 auto;
+    overflow: hidden;
+    text-align: center;
+}
+
+        form {
+            display: inline-block;
+            text-align: center;
+        }
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"],
+        input[type="password"] {
+            margin-bottom: 10px;
+            padding: 5px;
+            width: 250px;
+        }
+        input[type="submit"] {
+            width: 265px;
+            margin-top: 15px;
+            padding: 10px;
+            border: .5px .5px;
+            color: black;
+            background-color: white;
+        }
+        footer {
+    background-color: #333;
+    color: #fff;
+    padding: 130px 0;
+    text-align: center;
+    margin: 50px;
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1 style="text-align: center;">Create Account As Organization</h1>
+    </header>
+
+    <div class="container" style="padding: 50px;">
+        <form action="your_server_script.php" method="POST">
+            <input type="text" name="your_name" placeholder="your-Name" required><br>
+            <input type="email" name="your_email" placeholder="your-Email" required><br>
+            <input type="tel" name="your_phone" placeholder="your-Phone" required><br>
+            <input type="password" name="your_password" placeholder="your-Password" required><br>
+            <input type="submit" value="SignUp">
+        </form>
+    </div>
+    <footer>
+        <div class="container">
+            <p>FaceBook | Twitter</p><br>
+            <p class="copyright">Copyright &copy; 2024 | 01004505316</p>
+            <p>Privacy Policy</p>
+        </div>
+    </footer>
+</body>
+</html>
